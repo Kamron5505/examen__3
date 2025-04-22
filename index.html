@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        input {
+            outline: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#2a2a2a] font-[Roboto]">
+
+    <header>
+        <nav>
+            <h1 class="italic font-bold text-[267px] text-center text-[#000]">
+                <span class="text-[#00bfff]">M</span>OVIES!
+            </h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-[1200px] mx-auto">
+            <section>
+                <div class="text-center space-x-4">
+                    <div class="text-center space-x-4">
+                        <input
+                            class="bg-white rounded-[5px] w-[200px] h-[39px] font-normal text-[16px] text-[#757575] text-center"
+                            id="search" type="text" placeholder="Enter your movie name">
+
+                        <select class="bg-white rounded-[5px] py-[9px] px-[26px] border-none" id="sort">
+                            <option value="default">All</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+
+                        </select>
+
+                        <button
+                            class="w-[101px] h-[39px] bg-[#f5f5f5] text-black rounded-[5px] text-[16px] font-normal">
+                            Sort
+                        </button>
+
+                        <button id="searchBtn"
+                            class="w-[101px] h-[39px] bg-[#d9534f] text-white rounded-[5px] text-[16px] font-normal">
+                            Search
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <section class="mt-[60px]">
+            <div class="w-[1200px] mx-auto">
+                <div class="flex flex-wrap gap-6 justify-center" id="row">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
